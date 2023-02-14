@@ -11,8 +11,8 @@ class CashBackHackServiceTest {
 
     @org.testng.annotations.Test
      void remain() {
-        int amount = 900;
-        int expected = 100;
+        int amount = 1000;
+        int expected = 0;
         CashBackHackService cashBack = new CashBackHackService();
         int actual = cashBack.remain(amount);
         assertEquals(actual, expected);
